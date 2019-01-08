@@ -1,8 +1,8 @@
 # Homework 01: Rust Finger Exercises
 
-**Due ~~2016-01-27~~ 2016-01-28, 11:59pm.**
+**Due Thursday, 2019-01-25, 18:00.**
 
-For questions, please post on Piazza (Penn students) or Google Groups (other).
+For questions, please use the matrix channel.
 Links on homepage.
 
 ## Overview ##
@@ -12,13 +12,6 @@ in a Rust library, building and testing using Cargo, and writing modules. This
 assignment isn't intended to be especially difficult, but will make sure you're
 set up properly in the Rust ecosystem, and will give you some good experience
 using the Rust compiler.
-
-#### Classroom for GitHub
-
-We're using Classroom for GitHub, which manages private homework repositories
-for students. To create your very own private homework repository (owned by
-us), click this link:
-* https://classroom.github.com/assignment-invitations/d7a2cbae7d57de44e29c302c8e353a43
 
 ## Provided Code ##
 
@@ -36,7 +29,7 @@ will create a git repository (and `.gitignore`) for you. Then, you can add this
 your GitHub repository as a git remote, with something like:
 
 ```
-git remote add origin git@github.com:cis198-2016s/hw01-<username>.git
+git remote add origin git@github.com:username/hw01-<username>.git
 git push -u origin master
 ```
 

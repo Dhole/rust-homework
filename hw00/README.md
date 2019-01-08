@@ -1,15 +1,11 @@
 # Homework 00: Hello Rust & Hello Cargo!
 
-**Due 2016-01-25, 11:59pm.**
+**Due Thursday, 2019-01-18, 18:00.**
 
-For questions, please post on Piazza (Penn students) or Google Groups (other).
+For questions, please use the matrix channel.
 Links on homepage.
 
 #### Classroom for GitHub
-
-We're using Classroom for GitHub, which manages private homework repositories
-for students. To create your very own private homework repository (owned by
-us), click the link on the course Piazza.
 
 If there is no starter code, such as in this homework, you can use Cargo to
 initialize the git repository for you. See below. But first, Rust!
@@ -17,47 +13,36 @@ initialize the git repository for you. See below. But first, Rust!
 ## Installing Rust
 
 For this homework, all you'll have to do is install the Rust compiler (rustc)
-and the Rust package manager (Cargo). We'll be using Rust v1.6 for this class.
-(Version 1.6 is set to be released next Thursday! This homework doesn't depend
-on the version of Rust, so it's fine to get started early.)
+and the Rust package manager (Cargo). We'll be using Rust v1.31 for this class.
+(This homework doesn't depend on the version of Rust, so it's fine to get
+started early.)
 
-We recommend using [multirust][multirust], a tool to manage multiple
-installations of Rust on your system. Multirust supports Linux, OS X, and
-Windows (via MSYS2). Unfortunately, there is no support for Windows if you are
-not using MSYS2.
+We recommend using [rustup][https://www.rust-lang.org/tools/install], a tool to manage multiple
+installations of Rust on your system. Rustup supports Linux, OS X, and
+Windows.
 
-Multirust maintains a user default toolchain version (stable, beta, or
-nightly). Run `multirust default stable` to set your user preference to stable.
+Rustup maintains a user default toolchain version (stable, beta, or
+nightly). Run `rustup default stable` to set your user preference to stable.
 This will also download the stable toolchain.
 
-**On Linux, OS X, or Windows+MSYS2:**
-Install multirust by following the [instructions on their README][multirust].
-You can also use your local friendly package manager.
-
-[multirust]: https://github.com/brson/multirust
-
-**On Windows (without MSYS2):** 
-You can either use the standard Rust installer from
-[the website](https://www.rust-lang.org/downloads.html), or you can use
-multirust on Eniac.
-
-**On Eniac:**
-If you don't want to install Rust,
-multirust is also available on Eniac. Add this line to your `~/.bashrc` on
-Eniac: `export PATH=$PATH:/home1/c/cis198/local/bin`
+**On Linux, OS X**
+Install rustup by following the [instructions on the rust
+website][https://www.rust-lang.org/tools/install].
+You can also use your local friendly package manager and install cargo and
+rustc directly.
 
 To check that Rust and Cargo are installed properly, run the following commands
 and make sure the output matches below:
 
 ```
 $ rustc --version
-rustc 1.5.0 (3d7cd77e4 2015-12-04)
+rustc 1.31.1 (b6c32da9b 2018-12-18)
 $ cargo --version
-cargo 0.6.0-nightly (e1ed995 2015-10-22)
+cargo 1.31.0 (339d9f9c8 2018-11-16)
 ```
 
-When version 1.6 is released next week, you should update your version of Rust,
-using `multirust update stable`.
+When a new version is released, you should update your version of Rust,
+using `rustup update`.
 
 ## Hello, Rust!
 
@@ -100,7 +85,7 @@ your GitHub repository as a git remote as follows:
 
 
 ```
-git remote add origin git@github.com:cis198-2016s/hw00-<username>.git
+git remote add origin git@github.com:username/hw00-<username>.git
 git push -u origin master
 ```
 
