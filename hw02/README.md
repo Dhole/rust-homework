@@ -1,9 +1,6 @@
 # Homework 2: A Mediocre Binary Search Tree
 
-**Due 2016-02-03, 11:59pm.**
-
-For questions, please post on Piazza (Penn students) or Google Groups (other).
-Links on homepage.
+**Due 2018-01-31, 18:00.**
 
 ## Overview
 This assignment is modeled after Alexis Beingessner (Gankro)'s [_Learning Rust
@@ -17,13 +14,6 @@ Even though we're implementing a [BST][], you should read Chapters 1-2
 Gankro's writing is really fun to read and the content is enlightening.
 
 [BST]: https://en.wikipedia.org/wiki/Binary_search_tree
-
-#### Classroom for GitHub
-
-We're using Classroom for GitHub, which manages private homework repositories
-for students. To create your very own private homework repository (owned by
-us), click this link:
-* https://classroom.github.com/assignment-invitations/9f6544879f4d5995f8a23cf35caf2133
 
 ## Instructions
 
@@ -41,22 +31,19 @@ the author.
 
 #### Aside: Clippy
 
-[Clippy][] is a compiler plugin which runs [lints][] on your code. It only
-works in nightly Rust, however, so it's not enabled by default here. If you
-feel like trying it out, switch to the nightly channel
-(e.g. `multirust override nightly` while inside the project directory),
-then build with the `clippy` feature:
+[Clippy][] is a compiler plugin which runs [lints][] on your code.  If you
+feel like trying it out:
 
 ```
-cargo build --features clippy
-cargo test --features clippy
+rustup component add clippy
+cargo-clippy
 ```
 
 This is recommended as it will help catch some stylistic errors as you learn
 the language. (But, for ease of grading, please be sure to submit code which
 works on Rust stable.)
 
-[Clippy]: https://github.com/Manishearth/rust-clippy
+[Clippy]: https://github.com/rust-lang/rust-clippy
 [lints]: https://en.wikipedia.org/wiki/Lint_%28software%29
 
 (If for some reason Clippy causes problems for your stable Rust build, just
@@ -145,10 +132,9 @@ to be any more complex than the tests in TMLL 2.6.
 
 ### Submission
 
-Just like in homework 01, commit and push your work to the master branch of
-your Classroom for Github repository for this HW. Make sure it is visible on
-Github! This is your submission. (Work must be in the master branch at the due
-time.)
+Just like in homework 01, feel free to share the code with the teacher and ask
+questions in the matrix channel.  We will have a short session to resolve
+doubts before the next lesson.
 
 `cargo test` should work to run all of the tests in your homework on stable
 Rust. Make sure you have written tests which cover every one of your functions.
